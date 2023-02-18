@@ -1,0 +1,349 @@
+:root {
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+}
+/*
+- Weights: 400, 600
+- Font size: 18px
+*/
+* {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    color: var(--DarkGrayishBlue);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--DarkGrayishBlue);
+    
+}
+
+h3 {
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--DarkGrayishBlue);
+}
+
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--GrayishBlue);
+    line-height: 1.6em;
+    margin-top: 1.2em;
+}
+
+
+header {
+    background: url(../images/bg-header-mobile.png) no-repeat;
+}
+
+#logo-c {
+    margin-top: 120px;
+    margin-right: 0px;
+}
+
+
+
+#top-text-container {
+    margin:  40px;
+}
+
+#container-btns a {
+    display: block;
+    margin: 15px 40px;
+    padding: 14px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#ios-download-btn {
+    background-color: var(--StrongCyan);
+    box-shadow: 0px 3px 3px 0px hsl(171, 66%, 30%);
+}
+
+#mac-download-btn {
+    background-color: var(--LightBlue);
+    box-shadow: 0px 3px 3px 0px hsl(233, 100%, 58%);
+}
+
+#container-functions {
+    margin: 120px 40px;
+}
+
+#container-functions #monitor {
+    max-width: 100%;
+    margin: 60px auto;
+}
+
+#container-functions h2{
+    margin-top: 45px;
+}
+
+#devices-image {
+    max-width: 100%;
+    margin-top: 45px;
+}
+
+#blacklist-ico {
+    margin-top: 60px;
+}
+
+#text-ico {
+    margin-top: 60px;
+}
+
+#preview-ico {
+    margin-top: 60px;
+}
+
+#companies-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 60px auto;
+    width: 140px;
+
+}
+
+#companies-logo img {
+   margin-bottom: 40px;
+}
+
+
+#bottom-container {
+   margin: 0 40px;
+   margin-bottom: 110px;
+}
+
+#bottom-container a {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+
+
+footer {
+    background: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px; 
+    text-align: center; 
+    text-decoration: none;
+}
+
+#clip-logo-bottom {
+    text-align: center;
+    width: 45px;
+    margin: 35px;
+}
+
+.footer-link {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    color: var(--DarkGrayishBlue);
+    margin-bottom: 15px;
+}
+
+.social {
+    width: 60%;
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-around;
+    margin: 25px;
+}
+
+@media screen and (min-width: 376px){
+    header {
+        background: url(../images/bg-header-desktop.png) no-repeat;
+    }
+
+    #companies-logo {
+        display: flex;
+        flex-direction: column;
+        margin: 60px auto;
+    }
+}
+
+@media screen and (min-width: 767px){
+    #container-btns a{
+        padding: 35px;
+        font-size: 26px;
+    }
+
+    
+}
+
+@media screen and (min-width: 1023px){
+    #logo-c {
+        width: 70px;
+        margin: 70px auto;
+    }
+
+    #top-text-container {
+        margin: 40px 280px;
+    }
+
+    #container-btns {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #container-btns a {
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 15px 6px;
+    }
+
+    #ios-download-btn:hover {
+        transition: 1s;
+        box-shadow: 0px 12px 12px 0px hsl(171, 66%, 30%);
+    }
+
+    #ios-download-btn:not(hover){
+        transition: 1s;
+    }
+
+    #mac-download-btn:hover {
+        transition: 1s;
+        box-shadow: 0px 12px 12px 0px hsl(233, 100%, 58%)
+    }
+
+    #mac-download-btn:not(hover){
+        transition: 1s;
+    }
+       
+    
+
+    #container-functions h2, #container-functions p{
+        margin: auto 280px;
+    }
+
+    #container-functions {
+        margin-left: 0;
+    }
+
+
+    #container-functions-monitor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: auto;
+        height: 550px;
+        margin-bottom: 100px;
+    }
+
+    #monitor {
+        grid-row: 1 / span 3;
+        grid-column: 1;
+    }
+
+    #t1 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    #t2 {
+        grid-row: 2;
+        grid-column: 2;
+        
+    }
+
+    #t3 {
+        grid-row: 3;
+        grid-column: 2;
+        
+    }
+
+    #t1 p, #t2 p, #t3 p {
+        margin: auto 50px;
+        
+    }
+
+    #t1 h3, #t2 h3, #t3 h3 {
+        margin: auto 50px;
+        margin-bottom: 8px;
+        margin-top: 24px;
+    }
+
+    #container-functions-text {
+        margin-top: 97px;
+        text-align: start;
+        margin-right: 240px;
+        margin-left: 20px;
+    }
+
+    #tools-container {
+        display: flex;
+        align-items: center;
+        margin: auto 210px;
+        gap: 90px;
+    }
+
+    #companies-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 220px;
+        gap: 85px;
+    }
+
+    #companies-logo img {
+        width: 50%;
+        height: 50%;
+    }
+
+    footer {
+        font-size: 22px;
+        height: 210px;
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-template-rows: 100px 100px;
+    }
+
+    .footer-link:hover{
+        color: var(--StrongCyan);
+    }
+
+    #clip-logo-bottom {
+        width: 100px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    .social {
+        grid-column: 5;
+        grid-row: 1 / span 2;
+    }
+
+
+
+
+
+    
+
+}
